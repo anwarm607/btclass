@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class about forms and validations" />
+    <title>Forms and validations</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="result.html" method="GET" enctype="multipart/form-data">
+      <!---General Info-->
+      <fieldset>
+        <legend>General Information</legend>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input name="name" type="text" id="name" required maxlength="12" />
+        </div>
+        <div class="form-field">
+          <label for="age">Age</label>
+          <input
+            name="age"
+            type="number"
+            id="age"
+            required
+            max="100"
+            min="0"
+            step="12"
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input name="email" type="email" id="email" required />
+        </div>
+        <div class="form-field">
+          <label for="dob">Birthday</label>
+          <input
+            name="dob"
+            type="date"
+            id="dob"
+            required
+            min="2000-01-02"
+            max="2050-01-02"
+          />
+        </div>
+      </fieldset>
+
+      <!---Additional info-->
+      <fieldset>
+        <legend>Additional Information</legend>
+        <div class="form-field">
+          <label for="fruits"><b>Fav Fruit</b></label>
+          <div>
+            <label for="fruits">Apple</label>
+            <input name="fruit" type="checkbox" value="Apple" id="fruits" />
+          </div>
+          <div>
+            <label for="fruits">Orange</label>
+            <input name="fruit" type="checkbox" value="Orange" id="fruits" />
+          </div>
+          <div>
+            <label for="fruits">Pineapple</label>
+            <input name="fruit" type="checkbox" value="Pineapple" id="fruits" />
+          </div>
+        </div>
+        <!--Gender Radio button-->
+        <div class="form-fields">
+          <label><b>Gender</b></label>
+          <div>
+            <label for="male">Male</label>
+            <input name="gender" type="radio" value="male" id="male" />
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input name="gender" type="radio" value="female" />
+          </div>
+          <div>
+            <label for="others">Others</label>
+            <input name="gender" type="radio" value="others" />
+          </div>
+        </div>
+        <!---Fav colour-->
+        <div>
+          <label for="fav-color">Favourite colour</label>
+          <input name="fav-color" type="color" />
+        </div>
+      </fieldset>
+
+      <!---Other Information-->
+      <fieldset>
+        <legend>Other Information</legend>
+        <div>
+          <label for="bio">Bio</label>
+          <textarea></textarea>
+        </div>
+
+        <div>
+          <label for="phno">Phone number</label>
+          <input type="tel" name="phno" id="phno" />
+        </div>
+
+        <div>
+          <label for="profile">Profile pic</label>
+          <input type="file" name="profile" id="profile" />
+        </div>
+        <div>
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url" />
+        </div>
+
+        <div>
+          <label for="pswrd">Password</label>
+          <input type="password" name="pswrd" id="pswrd" />
+        </div>
+      </fieldset>
+      <!---Reset-->
+      
+
+      <div>
+        <input type="reset" name="reset" />
+      </div>
+
+      <!---Submit-->
+      <div>
+        <input type="submit">
+        <!-- <button type="submit">GOO</button> -->
+      </div>
+    </form>
+  </body>
+</html>
