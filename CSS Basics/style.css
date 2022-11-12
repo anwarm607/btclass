@@ -1,0 +1,38 @@
+#there {
+    color: blue;
+    background-color: purple; 
+}
+.hi {
+    color: red;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+h1 {
+    color: blueviolet;
+    background-color: bisque;
+}
+
+div h1 {
+    color: green;
+    background-color: yellow;
+}
+[tabindex = 1] {
+    color: purple;
+    background-color: white;
+}
+[target = "_blank"] {
+    color: purple;
+    background-color: red;
+}
+[href = "google.com"] {
+    color: purple;
+    background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container-3 {
+    background-color: black;
+}
