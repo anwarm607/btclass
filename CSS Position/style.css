@@ -1,0 +1,25 @@
+.heading_container {
+    border: 5px solid red;
+
+}
+.heading-1 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    left: 40px;
+    margin: 0;
+}
+.child_container {
+    position: relative;
+}
+.fixed-heading-1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.sticky-heading {
+    position: sticky;
+    top:0;
+    right: 0;
+    background-color: red;
+}

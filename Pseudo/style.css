@@ -1,0 +1,34 @@
+h1 {
+    color: #b863d4;
+    background-color: black;
+    font-family: 'Rubik Distressed', sans-serif;
+}
+h1:hover {
+    background-color: pink;
+}
+h2 {
+    color: red;
+    background-color: black;
+}
+h2::before {
+    content: url(./care-discord.gif);
+}
+h2::after {
+    content: url(./care-discord.gif);
+}
+img {
+    opacity: 1;
+}
+span {
+    background-color: #b863d4;
+}
+.another_heading {
+    background-color: red;
+}
+#another_heading_id {
+    background-color: purple; 
+}
+.image {
+    width: 30%;
+    height: 60% !important;
+}
