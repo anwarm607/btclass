@@ -1,0 +1,18 @@
+.box {
+    width: 300px;
+    height: 300px;
+    /* background: linear-gradient(105.1deg, #E72F66 0%, #1E0FBF 100%); */
+    box-shadow:  2px 2px 5px red inset;
+}
+.text_shadow {
+    text-shadow: 2px 2px 5px red;
+}
+.paragraph {
+    width: 300px;
+    height: 100px;
+}
+.paragraph_container {
+    width: 300px;
+    border: 1px solid tomato;
+    overflow-y: auto;
+}

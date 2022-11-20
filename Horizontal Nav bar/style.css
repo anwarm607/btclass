@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+}
+.nav_list li {
+    list-style: none;
+    display: inline-block;
+}
+.nav_list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+.nav_list li a:hover {
+    background-color: white;
+    color: black;
+}
+.nav_list {
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    padding: 20px 5px;
+    position: fixed;
+    width: 100%;
+}
+.section {
+    padding-top: 58.5px;
+}
+p {
+    font-size: 40px;
+}
+h1 {
+    font-size: 60px;
+}
+@media screen and (max-width: 767px) {
+    .nav_list li {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section {
+        padding-top: 155.5px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
