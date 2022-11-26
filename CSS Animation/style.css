@@ -1,0 +1,34 @@
+.box {
+    width: 230px;
+    height: 230px;
+    background-color: peachpuff;
+    /* animation: expand 2s infinite ease-in-out; */
+}
+@keyframes expand {
+    10% {
+        width: 250px;
+    }
+    33% {
+        width: 260px;
+    }
+    66% {
+        width: 280px;
+    }
+    100% {
+        width: 300px; 
+    }
+}
+.text_input {
+    animation: wrong_password 0.5s;
+}
+@keyframes wrong_password {
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px); 
+    }
+}
