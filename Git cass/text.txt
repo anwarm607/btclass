@@ -1,0 +1,5 @@
+Create a remote repository without Readme
+Copy all commands and run it in vscode terminal
+Then to add changes to git by "git add ." comment
+then commit all changes by "git commit -m "Your message"" comment
+then push changes by "git push"
