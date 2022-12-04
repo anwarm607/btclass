@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 body {
 }
-.colors {
-    background: url("image.jpeg") no-repeat scroll;
+.bg-image {
+    background: url("image.jpeg") no-repeat fixed;
     color: rgb(255, 0, 0);
     border: 1px solid rgb(0, 0, 255);
     background-clip: content-box;
     max-width: 1020px;
+    height: 1500px;
     text-align: center;
 }
 .hithere2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Sono', Arial;
+    /* font-family: 'Zen Dots', cursive; */
     text-align:right;
-    text-decoration: underline;
+    text-decoration:dashed;
 }
 a {
     font-size: 30px;
