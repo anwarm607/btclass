@@ -1,17 +1,16 @@
 //List of data types
 
-let firstName = "Anwar";
+let firstName = 'Anwar'; // String
 
-let age = 27;
+let age = 27; // number or Integer
 
-let isMale = true;
+let isMale = true; // boolean
 
-let dob;
+let dob; // undefined
 
-let address = null;
+let address = null; // Null
 
 // Primitive data types - Value Data type
-
 
 console.log(firstName, "String Type");
 console.log(age, "Number Type");

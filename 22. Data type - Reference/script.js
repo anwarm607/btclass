@@ -5,21 +5,22 @@
 // 3. Functions
 
 
-/* 1.Object
-    Syntax */
-// {
-//     "key": "value"
-// }
+// 1.Object
+ /*  Syntax
+ {
+     "key": "value" - key value pair
+ }
+*/
 
 // Example object
 
 let person = {
     name: "Anwar",
     age: 27,
-    address: "3/25H Main street"
+    address: "3/25H Main street",
 };
 
-// console.log(person);
+console.log(person);
 
 
 // Access Object by dot notation
@@ -28,7 +29,7 @@ console.log(person.name);
 console.log(person.age);
 console.log(person.address);
 
-// Access object by bracket notation
+// Access object by bracket notation - Square bracket
 
 console.log(person["name"])
 console.log(person["age"])
@@ -42,6 +43,7 @@ console.log(person)
 
 person["age"] = 29
 console.log(person)
+
 
 // Insert a key value pair
 
@@ -66,9 +68,10 @@ let personWithNestedObj = {
         secondSibling: {
             name: "Person 2",
             age: 12
-        }
+        },
     }
 }
+
 // Nested object access
 console.log(personWithNestedObj.siblings.firstSibling.name)
 console.log(personWithNestedObj["siblings"]["secondSibling"]["name"])
@@ -84,9 +87,10 @@ console.log(typeof person)
   */
 
 let emptyArr = [];
-let favColours = ["Red", "Purple", "Violet", "white"]
-let favNumbers = [1, 2, 3, 4, 5]
-let persons= [ {name: "Anwar", age: 27}, {name: "Kiran", age: "26"} ];
+let favColours = ["Red", "Purple", "Violet", "white"] // Array of string
+let favNumbers = [1, 2, 3, 4, 5] //Array of numbers
+
+let persons= [ {name: "Anwar", age: 27}, {name: "Kiran", age: "26"} ]; // Array of object
 // Nested Array
 let wholeNumber = [1,"3",5,7,[12,4,6,8], {name: "Anwar", age: 27}, true]
 console.log(emptyArr)
@@ -97,7 +101,7 @@ console.log(persons)
 console.log(typeof emptyArr, "Array Type -----");
 
 
-// Access array by index
+//  Access array by index
 
 console.log(favColours[0])
 console.log(favColours[1])
@@ -124,12 +128,15 @@ console.log(wholeNumber.length)
 
 // 3. Functions - Set of Statement
 // An Example of statement is., let add = x+y;, let name = "Anwar";
-/*
+/* Syntax
 function printMyName() = {
 
 } */
+// {} - Curly Brace
+// [] - Square bracket
+// () - paranthesis
 function printMyName() {
-    console.log("Anwar", "Looppppp")
+    console.log("Anwar", "Looppppp");
 }
 printMyName();
 
@@ -142,11 +149,11 @@ function addTwoNumbers() {
 addTwoNumbers();
 
 // Argument and parameter
-function add(x, y) {
-    let result = x+y;
+function add(firstNumber, secondNumber) { // Parameter
+    let result = firstNumber+secondNumber;
     console.log(result);
 }
-add(34, 43);
+add(34, 43); // Argument
 add(89.2899, 43);
 add(90.282, 43);
 
@@ -160,12 +167,12 @@ multipleTwoNumber(45, 78);
 
 
 // Return of function block
-let divideTwoNumbers = (x, y) => {
-    let divide = x/y;
-    return divide
+let divideTwoNumbers = (firstNumber, secondNumber) => {
+    let result = firstNumber/secondNumber;
+    return result
 }
 
-let divideResult = divideTwoNumbers(4, 7);
-console.log(divideResult, "Line number 169");
+let divideResult = divideTwoNumbers(4, 7, 6);
+console.log(divideResult, "Line number 176");
 
 
