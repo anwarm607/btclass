@@ -1,0 +1,3 @@
+// Return bmi value from bmiCalculate function
+let bmi = bmiCalculate(160, 60)
+console.log(bmi)
