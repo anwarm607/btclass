@@ -6,9 +6,10 @@ asjkdhiuahsdh
 alert(56 - 3123);
 
 var age = "27";
+age = "28";
 console.log(age);
 let firstName = "Anwar";
-firstName = "Mohamed"
+firstName = "Mohamed";
 console.log(firstName);
 
 const gender = "Male";
@@ -34,5 +35,5 @@ const Gender = ""
     3. No space and hiphens in variable name
     4. Case sensitive
     5. Variable name should be meaningful
-    6. Should use camelcase i.e., firstName., first letter of first word will be small and next word should be Capital
+    6. Should use camelCase i.e., firstName., first letter of first word will be small and next word should be Capital
 */

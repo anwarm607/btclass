@@ -10,7 +10,7 @@ let dob;
 
 let address = null;
 
-// Primitive data types
+// Primitive data types - Value Data type
 
 
 console.log(firstName, "String Type");
