@@ -1,0 +1,11 @@
+Loan app
+
+salary = 25000
+cibil score = 750
+
+Bank 1
+if the salary is above 21000 and cibil score is above or equal 700 - console.log("You are eligible to take loan")
+
+Bank 2
+if the salary is above 25000 or cibil score is above 800 - console.log("You are eligible")
+

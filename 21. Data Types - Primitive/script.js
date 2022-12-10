@@ -2,6 +2,8 @@
 
 let firstName = 'Anwar'; // String
 
+firstName = "Mohamed"
+
 let age = 27; // number or Integer
 
 let isMale = true; // boolean

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: black solid;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.todo_parent {
+    display: flex;
+}
+#check {
+    display: none;
+}
