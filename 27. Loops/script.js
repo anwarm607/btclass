@@ -13,9 +13,9 @@
 
 for (let index = 10; index > 2; index--) {
     if (index % 2 != 0) {
-        // console.log(index, "Odd")
+        console.log(index, "Odd")
     } else {
-        // console.log(index, "Even")
+        console.log(index, "Even")
     }
 }
 
