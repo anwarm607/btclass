@@ -1,0 +1,1 @@
+Use switch case and Date obeject to log the greetings
