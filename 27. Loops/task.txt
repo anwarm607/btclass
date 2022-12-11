@@ -1,0 +1,39 @@
+Simple calculator app
+insert p tag with numbers
+add + = symbol
+html events on click just console.log all button's value
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The button value attribute</h1>
+
+Choose your favorite subject:
+<input type="text" id="result" />
+<button name="subject" value="1" onclick="clickBtn(this)">1</button>
+<button name="plus" value="+" onclick="clickBtn(this)">+</button>
+<button name="equal" value="=" onclick="clickBtn(this)">=</button>
+
+<script>
+	const clickBtn = (event) => {
+		console.log(event.value)
+        
+        if (event.value === "=") {
+			let completeValue = document.getElementById('result').value;
+            let splitArr = completeValue.split('+');
+            let tempValueHolder = 0;
+           for (const iterator of splitArr) {
+				tempValueHolder += Number(iterator)
+			}
+            document.getElementById('result').value += `=${tempValueHolder}`
+            
+		} else {
+		document.getElementById('result').value += event.value
+		}
+    }
+</script>
+</body>
+</html>
