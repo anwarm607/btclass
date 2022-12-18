@@ -1,0 +1,26 @@
+1. Array fill
+2. Array map
+3. Dom
+4. Event function
+5. Split
+6. 
+
+let domValue = "333+456546+12093"
+equaltfn = () => {
+    let isAddition = domValue.includes("+");
+    let isSub = domValue.includes("-");
+    let isDiv = domValue.includes("/");
+    if (isAddition) {
+        let splitArr = domValue.split("+")
+        return addFn(splitArr)
+    } else if (isSub) {
+        let splitArr = domValue.split("-")
+        return subFn(splitArr)
+    }
+}
+
+addFn = (splitArr) => {
+    let result = splitArr.reduce((a,b) => a+b, 0)
+    return result
+}
+subFn = 

@@ -5,8 +5,8 @@ let arr = Array.from("ABC");
 let arrFill = Array(10).fill();
 
 let exampleArray = [1,2, 3, 4]
-exampleArray.fill()
-console.log(exampleArray.length)
+exampleArray.fill(4, 3, 10)
+console.log(exampleArray)
 
 // Iteration
 
@@ -24,5 +24,6 @@ document.getElementById('numbers').innerHTML = buttonHtml
 // Object
 // String
 // Math
+// Date
 
 

@@ -26,7 +26,7 @@ console.log(user("Ananth", "2001-05-14").getMyAge());
 
 // Constructor name should be in Pascal case
 
-// let User = (name, dob) => {
+// function User(name, dob) {
 //     this.name = name
 //     this.dob = dob
 // }
