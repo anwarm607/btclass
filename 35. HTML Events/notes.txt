@@ -1,0 +1,4 @@
+Inline Events
+    List of Events - https://www.w3schools.com/tags/ref_eventattributes.asp
+AddEventListener
+Event Object
