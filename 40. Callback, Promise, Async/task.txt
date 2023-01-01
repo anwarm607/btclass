@@ -1,0 +1,7 @@
+Use the below API
+https://jsonplaceholder.typicode.com/posts
+
+
+1. Use Map to iterate the array that get from the above API
+2. Construct the HTML string and inject the HTML string to dom
+3. For post design refer the images in this folder. Try to achieve the same result as per the image
