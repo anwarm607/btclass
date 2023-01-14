@@ -1,0 +1,14 @@
+1. Cover all topics of HTML, CSS, JS and Bootstrap
+2. Practice evrything and do some stuff by yourself (Learn by doing)
+3. Push everything you learn to git
+4. Create a portfolio website
+5. Showcase the fully completed and complex project
+6. Refer interview question by searching github
+7. Practice some front end projects by searching github
+
+Some usefull links
+1. Front end mentor - Coding challenges
+2. The valley of code - https://thevalleyofcode.com/ - Books and references
+
+
+
