@@ -1,0 +1,11 @@
+.counter {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+
+}
+.counter button {
+    height: 20px;
+}
