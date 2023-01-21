@@ -1,0 +1,15 @@
+Download and install Node from https://nodejs.org/en/download/
+To check node version in command prompt
+node -v
+npm -v
+both command should return versions
+
+
+React uses Node server for development server 
+
+React documentation
+https://reactjs.org/docs
+
+To create react app
+https://create-react-app.dev/
+
