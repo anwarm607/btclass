@@ -1,0 +1,3 @@
+
+Life cycle diagram
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
