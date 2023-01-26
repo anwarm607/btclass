@@ -29,7 +29,7 @@ const ProductTable = (props) => {
         </thead>
         <tbody>
           <ProductCategoryRow name="Sporting Goods" />
-          <ProductRow data={props.sportingGoodArr} />
+          <ProductRow data={props.sportingGoodArr} /> 
           <ProductCategoryRow name="Electronics" />
           <ProductRow data={props.electronicsArr} />
         </tbody>

@@ -1,7 +1,7 @@
 import FilterableComponent from "./FiltarableTable";
 import {useState} from 'react';
 
-let dummyData = [
+let jsonData = [
   {
     category: "Sporting Goods",
     price: "$49.99",
@@ -43,7 +43,7 @@ let dummyData = [
 function App() {
   const [filterText, setFilterText ] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
-  const [data, setData] = useState(dummyData)
+  const [data, setData] = useState(jsonData)
 
   let sportingGoodArr = data.filter((it) => it.category === "Sporting Goods");
   let electronicsArr = data.filter((it) => it.category === "Electronics");
