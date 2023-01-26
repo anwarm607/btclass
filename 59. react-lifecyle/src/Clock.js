@@ -17,10 +17,11 @@ class Clock extends React.Component {
         this.tick()
     }, 1000);
   }
+
   componentDidUpdate(prevProps, prevState) {
     console.log("Called componentDidUpdate", prevState)
     if (this.state.currentTime !== prevState.currentTime) {
-        if (this.state.currentTime === '10:04:00') {
+        if (this.state.currentTime === '20:21:40') {
             this.setState({
                 show: true
             })

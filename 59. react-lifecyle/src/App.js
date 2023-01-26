@@ -32,18 +32,18 @@ class App extends React.Component {
         {/* Conditional rendering Example */}
         {/* <LoginControl /> */}
         {/* List and Keys Example */}
-        <Border>
+        {/* <Border>
           <ListsAndKeys />
-        </Border>
+        </Border> */}
 
         {/* Children Props and Components in Props */}
-        <Border
+        {/* <Border
           extra={<Extra />}
           count={this.state.count}
           changeCount={() => this.changeCount()}
         >
           <h1>Example Children props</h1>
-        </Border>
+        </Border> */}
       </div>
     );
   }

@@ -12,7 +12,7 @@ const SearchBar = (props) => {
       <div>
         <input
           type="checkbox"
-          value={props.inStockOnly}
+          checked={props.inStockOnly}
           onChange={(ev) => props.setInStockOnly(ev.target.checked)}
         />
         <label>Only show products in stock</label>
