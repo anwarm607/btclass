@@ -1,5 +1,5 @@
 import FilterableComponent from "./FiltarableTable";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 let jsonData = [
   {
@@ -44,9 +44,12 @@ function App() {
   const [filterText, setFilterText ] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   const [data, setData] = useState(jsonData)
+  const [someState, setSomeState] = useState(false);
+  const [anotherState, setAnotherState] = useState(false);
 
   let sportingGoodArr = data.filter((it) => it.category === "Sporting Goods");
   let electronicsArr = data.filter((it) => it.category === "Electronics");
+
   if (inStockOnly) {
     sportingGoodArr =  data.filter((it) => it.category === "Sporting Goods" && it.stocked);
     electronicsArr = data.filter((it) => it.category === "Electronics" && it.stocked);
@@ -58,21 +61,28 @@ function App() {
     if (text) {
       currentData = currentData.filter(it => it.name.includes(text))
     } else {
-      currentData = dummyData
+      currentData = jsonData
     }
     setData(currentData);
   }
 
+  useEffect(() => {
+    console.log("Called on mount")
+  }, [someState])
+
   return (
     <div className="App">
-      <FilterableComponent
+      {/* <FilterableComponent
         setFilterText={(text) => handleChaneText(text)}
         filterText={filterText}
         setInStockOnly={setInStockOnly}
         inStockOnly={inStockOnly}
         sportingGoodArr={sportingGoodArr}
         electronicsArr={electronicsArr}
-      />
+      /> */}
+      {/* UseEffect example */}
+      <button onClick={() => setSomeState(!someState)}>Click me</button>
+      <button onClick={() => setAnotherState(!anotherState)}>Click me for another state update</button>
     </div>
   );
 }
