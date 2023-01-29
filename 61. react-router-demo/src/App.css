@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+.nav-bar li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.nav-bar {
+    background-color:aquamarine;
+    padding: 10px 0;
+}
+.nav-bar li .active {
+    text-decoration: none;
+    font-weight: bold;
+}
+.tab li {
+    display: inline;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+.tab a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 12px 8px;
+}
+.tab {
+    background-color:cadetblue;
+    padding: 10px 0;
+    margin-top: 10px;
+}
