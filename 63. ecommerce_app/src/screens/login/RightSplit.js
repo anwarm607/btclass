@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Input from "../../components/input";
 import { LoginHeading, LoginSubText } from "../../styles/common";
 import {
@@ -9,25 +9,42 @@ import {
   RightSplitSectionWrapper,
 } from "./styles";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
+import { AuthContext } from "../../context";
 
 const RightSplit = () => {
   const [username, setUserName] = useState(null);
   const [password, setPassword] = useState(null);
+  const [loading, setLoading] = useState(false)
+
+  let {setIsLogin} = useContext(AuthContext);
 
   const handleSubmit = (ev) => {
+    ev.preventDefault();
+    setLoading(true)
     // API CALL
     let data = {
       username: username,
       password: password
     }
-    console.log(data)
+    // console.log(data);
 
+    // Login API call
     axios.post('https://fakestoreapi.com/auth/login', data).then(res => {
-      console.log(res)
+      // console.log(res.data.token);
+      
+      if (res.data.token) {
+        // Set the token to localstorage that is get from backend
+        localStorage.setItem('token', res.data.token);
+        // Set is login to true by using context
+        setIsLogin(true);
+        setLoading(false)
+      }
     }).catch(ex => {
-      console.log(ex)
+      console.log(ex.response.data);
+      alert(ex.response.data || "Something went wrong!!");
+      setLoading(false)
     })
-    ev.preventDefault();
   };
   return (
     <RightSplitSection>
@@ -53,7 +70,7 @@ const RightSplit = () => {
             />
           </div>
           <LoginBtnWrapper>
-            <LoginBtn type="submit">Login</LoginBtn>
+            <LoginBtn disabled={loading} type="submit">Login</LoginBtn>
           </LoginBtnWrapper>
         </form>
       </RightSplitSectionWrapper>

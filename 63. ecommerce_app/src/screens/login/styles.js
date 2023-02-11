@@ -37,4 +37,9 @@ export const LoginBtn = styled.button`
     font-size: 18px;
     border-radius: 21px;
     box-shadow: 4px 4px 6px #407bfe;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
 `

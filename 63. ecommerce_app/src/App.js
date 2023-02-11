@@ -1,11 +1,14 @@
-import Router from './routes';
-import GlobalStyle from './styles/globalStyles';
+import AuthWrapper from "./context";
+import Router from "./routes";
+import GlobalStyle from "./styles/globalStyles";
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
-      <Router />
+      <AuthWrapper>
+        <GlobalStyle />
+        <Router />
+      </AuthWrapper>
     </div>
   );
 }

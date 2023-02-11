@@ -11,5 +11,6 @@ export const LoginContainer = styled.div`
 `
 export const NavbarContainer = styled.div`
   position: fixed;
-  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 3px -1px 4px;
 `

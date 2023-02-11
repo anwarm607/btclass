@@ -2,7 +2,7 @@
 
 const Home = () => {
     return (
-        <h1>Home Screen</h1>
+        <h1 style={{paddingTop: "100px"}}>Home Screen</h1>
     )
 }
 
