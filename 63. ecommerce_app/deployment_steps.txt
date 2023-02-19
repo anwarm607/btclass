@@ -1,0 +1,14 @@
+First take build
+npm run build
+
+Install Netlify if not already installed
+npm install netlify-cli -g
+
+Run netlify deploy
+netlify deploy
+
+Follow onscreen instructions
+
+create a new file in build folder named as "_redirects" and write redirect rule to return index..html always
+
+And click deploy on netlify dashboard
